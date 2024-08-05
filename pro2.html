@@ -2,67 +2,62 @@
 <html>
 <head>
     <style>
-         header{
-            display:flex;
-             justify-content: space-between;
-             background-color:rgb(233, 171, 116);
-             align-items: center;
+header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(233, 171, 116);
+            align-items: center;
         }
-        a{
+        a {
+            color:black;
             padding: 40px;
             text-decoration: none;
         }
-        header p{
-            padding-left:20px;
+        header p {
+            padding-left: 20px;
             font-weight: 500;
             font-family: Arial, Helvetica, sans-serif;
-            font-size:x-large
+            font-size: x-large;
         }
-        .cart{
-            font-size:larger;
+        .cart {
+            font-size: larger;
         }
-       .div1{
-        height: 100vh;
-        width: 100%;
-        background-image: url(https://img.freepik.com/free-photo/top-view-delicious-food-with-copy-space_23-2150873986.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722211200&semt=ais_user);
-        background-repeat: no-repeat;
-        background-size:100% 100vh;
+        .div1 {
+            height: 100vh;
+            width: 100%;
+            background-image: url(https://img.freepik.com/free-photo/top-view-delicious-food-with-copy-space_23-2150873986.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722211200&semt=ais_user);
+            background-repeat: no-repeat;
+            background-size: 100% 100vh;
+        }
+        .div1 p {
+            color: rgb(242, 187, 139);
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10%;
+            padding-top: 20%;
+            font-size: xx-large;
+        }
+        .div2 {
+            height: 100vh;
+            width: 100%;
+            background-image: url(https://t3.ftcdn.net/jpg/06/14/70/02/360_F_614700207_vBV0ljBPlnx3WjesnIEIAEifVZtYn0g6.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100vh;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            padding-left: 5%;
+            padding-top: 10%;
+        }
+        .div2 p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            padding-left: 5%;
+        }
 
-
-       }
-       .div1 p{
-        color: rgb(242, 187, 139);
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 10%;
-        padding-top: 20%;
-        font-size:xx-large;
-       }
-       .div2{
-        height: 100vh;
-        width: 100%;
-        margin-bottom: 20px;
-        background-image: url(https://t3.ftcdn.net/jpg/06/14/70/02/360_F_614700207_vBV0ljBPlnx3WjesnIEIAEifVZtYn0g6.jpg);
-        background-repeat: no-repeat;
-        background-size:100% 100vh;
-        background-repeat: no-repeat;
-        background-size:100% 100vh;
-    }
-    h2{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: x-large;
-        padding-left: 5%;
-        padding-top: 10%;
-       }
-       .div2 p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.5rem;
-        padding-left: 5%;
-
-       
-       }
-    .div3 {
-           
-            background-color: black;
+        .div3 {
+            background-color: rgb(35, 34, 34);
         }
         .div3 header {
             display: flex;
@@ -88,7 +83,7 @@
             padding: 4rem;
             margin: auto;
             width: 100%;
-            background-color: black;
+            background-color: rgb(35, 34, 34);
         }
         .shop-content {
             display: grid;
@@ -122,7 +117,7 @@
             padding: 20px;
             background-color: antiquewhite;
             z-index: 100;
-            transition: 0.5s; 
+            transition: 0.5s; /* Added transition for smooth opening */
         }
         .cart-active {
             right: 0;
@@ -180,10 +175,10 @@
             margin-left: 0.5rem;
         }
         .cart-remove {
-            font-size: 8px;
             color: red;
             cursor: pointer;
-        }
+            font-size: 6px; 
+}
         .total {
             display: flex;
             justify-content: flex-end;
@@ -206,12 +201,11 @@
             cursor: pointer;
         }
         #cart-close {
-            
-            color: brown;
+            color: red;
             position: absolute;
             top: 0;
             right: 0;
-            font-size: 1rem;
+            font-size: 1.3rem;
             cursor: pointer;
         }
         .food-box img {
@@ -229,17 +223,17 @@
             <a href="#abo">About</a>
             <a href="#menu">Order now</a>
         </nav>
-        </header>
-        <div class="div1">
-         <p>MADE FROM KITCHEN STUFF <br><br>THAT ENLIGTENS 
-            YOUR TASTE BUDS<br><br>CONTACT : 9543567812</p> 
-        </div>
-        <div class="div2">
-            <h2 id="abo">ABOUT</h2><BR>
-                <P>There's something magical about making pizza at home. It's not just about the end result  a perfectly baked, cheesy, and<br><br>
-                    flavorful pie  but the entire process. Kneading the dough, spreading the sauce, layering the toppings, <br><br>and watching it all come together 
-                    in the oven is a truly rewarding experience. Plus, homemade<br><br> pizza allows you to get creative and tailor every pie to your personal preferences.</P>
-        </div>
+    </header>
+    <div class="div1">
+        <p>MADE FROM KITCHEN STUFF <br><br>THAT ENLIGTENS YOUR TASTE BUDS<br><br>CONTACT : 9543567812</p>
+    </div>
+    <div class="div2">
+        <h2 id="abo">ABOUT</h2>
+        <p>There's something magical about making pizza at home. It's not just about the end result a perfectly baked, cheesy,<br><br>
+            and flavorful pie but the entire process. Kneading the dough, spreading the sauce, layering the toppings, and watching<br><br>
+            it all come together in the oven is a truly rewarding experience. Plus, homemade pizza allows you to get creative and tailor<br><br>
+            every pie to your personal preferences.</p>
+    </div>
     <div class="div3">
         <header>
             <p id="menu">HOMIES PIZZA</p>
@@ -264,7 +258,7 @@
             <div class="shop-content">
                 <div class="food-box">
                     <div class="pic">
-                        <img src="chicken-bbq.jpg">
+                        <img src="chicken pizza.jpg">
                     </div>
                     <h2 class="food-title">Chicken</h2>
                     <p class="food-price">Rs.400</p>
@@ -272,7 +266,7 @@
                 </div>
                 <div class="food-box">
                     <div class="pic">
-                        <img src="veg-pizza.jpg">
+                        <img src="veg pizza.jpg">
                     </div>
                     <h2 class="food-title">Veg</h2>
                     <p class="food-price">Rs.350</p>
@@ -328,17 +322,17 @@
                 </div>
                 <div class="food-box">
                     <div class="pic">
-                        <img src="veg-pizza.jpg">
+                        <img src="chicken-pizza.jpg">
                     </div>
                     <h2 class="food-title">Mushroom</h2>
-                    <p class="food-price">Rs.300</p>
+                    <p class="food-price">Rs.400</p>
                     <p class="add">Add</p>
                 </div>
                 <div class="food-box">
                     <div class="pic">
-                        <img src="Paneer-Pizza-12-inch-01.jpg">
+                        <img src="veg-pizza.jpg">
                     </div>
-                    <h2 class="food-title">Paprika</h2>
+                    <h2 class="food-title">Paprica</h2>
                     <p class="food-price">Rs.350</p>
                     <p class="add">Add</p>
                 </div>
@@ -358,14 +352,14 @@
             cart.classList.remove('cart-active');
         });
 
-
+// Update cart count
 function updateCartCount() {
   let cartCount = document.querySelector('.cart-count');
   let cartItems = document.querySelectorAll('.cart-box');
   cartCount.innerHTML = cartItems.length;
 }
 
-
+// Update total price
 function updateTotalPrice() {
   let totalPrice = 0;
   let cartItems = document.querySelectorAll('.cart-box');
@@ -377,14 +371,14 @@ function updateTotalPrice() {
   document.querySelector('.total-price').innerHTML = 'Rs.' + totalPrice.toFixed(2);
 }
 
-
+// Remove item from cart
 function removeItem() {
   this.parentElement.remove();
   updateCartCount();
   updateTotalPrice();
 }
 
-
+// Change quantity
 function changeQty() {
   if (isNaN(this.value) || this.value < 1) {
     this.value = 1;
@@ -392,7 +386,7 @@ function changeQty() {
   updateTotalPrice();
 }
 
-
+// Add item to cart
 function addItem() {
   let food = this.parentElement;
   let title = food.querySelector('.food-title').innerHTML;
@@ -410,20 +404,19 @@ function addItem() {
 
 // Create cart product
 function createCartProduct(title, price, imgsrc) {
-  return 
+  return `
     <div class="cart-box">
       <img src="${imgsrc}" class="cart-img">
       <div class="detail-box">
         <div class="cart-food-title">${title}</div>
         <div class="price-box">
           <div class="cart-price">${price}</div>
-
         </div>
         <input type="number" value="1" class="cart-quantity">
       </div>
       <p class="cart-remove">Remove</p>
     </div>
-  ;
+  `;
 }
 
 // Load content
@@ -442,7 +435,7 @@ function loadContent() {
   });
 }
 
-
+// Initialize
 document.addEventListener('DOMContentLoaded', loadContent);
 
 
