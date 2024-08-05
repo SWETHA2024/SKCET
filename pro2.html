@@ -2,7 +2,66 @@
 <html>
 <head>
     <style>
+         header{
+            display:flex;
+             justify-content: space-between;
+             background-color:rgb(233, 171, 116);
+             align-items: center;
+        }
+        a{
+            padding: 40px;
+            text-decoration: none;
+        }
+        header p{
+            padding-left:20px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:x-large
+        }
+        .cart{
+            font-size:larger;
+        }
+       .div1{
+        height: 100vh;
+        width: 100%;
+        background-image: url(https://img.freepik.com/free-photo/top-view-delicious-food-with-copy-space_23-2150873986.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722211200&semt=ais_user);
+        background-repeat: no-repeat;
+        background-size:100% 100vh;
+
+
+       }
+       .div1 p{
+        color: rgb(242, 187, 139);
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 10%;
+        padding-top: 20%;
+        font-size:xx-large;
+       }
+       .div2{
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 20px;
+        background-image: url(https://t3.ftcdn.net/jpg/06/14/70/02/360_F_614700207_vBV0ljBPlnx3WjesnIEIAEifVZtYn0g6.jpg);
+        background-repeat: no-repeat;
+        background-size:100% 100vh;
+        background-repeat: no-repeat;
+        background-size:100% 100vh;
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        padding-left: 5%;
+        padding-top: 10%;
+       }
+       .div2 p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        padding-left: 5%;
+
+       
+       }
     .div3 {
+           
             background-color: black;
         }
         .div3 header {
@@ -63,7 +122,7 @@
             padding: 20px;
             background-color: antiquewhite;
             z-index: 100;
-            transition: 0.5s; /* Added transition for smooth opening */
+            transition: 0.5s; 
         }
         .cart-active {
             right: 0;
@@ -155,10 +214,32 @@
             font-size: 1rem;
             cursor: pointer;
         }
-        #
+        .food-box img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
     </style>
 </head>
 <body>
+    <header>
+        <p>HOMIES PIZZA</p>
+        <nav>
+            <a href="#abo">About</a>
+            <a href="#menu">Order now</a>
+        </nav>
+        </header>
+        <div class="div1">
+         <p>MADE FROM KITCHEN STUFF <br><br>THAT ENLIGTENS 
+            YOUR TASTE BUDS<br><br>CONTACT : 9543567812</p> 
+        </div>
+        <div class="div2">
+            <h2 id="abo">ABOUT</h2><BR>
+                <P>There's something magical about making pizza at home. It's not just about the end result  a perfectly baked, cheesy, and<br><br>
+                    flavorful pie  but the entire process. Kneading the dough, spreading the sauce, layering the toppings, <br><br>and watching it all come together 
+                    in the oven is a truly rewarding experience. Plus, homemade<br><br> pizza allows you to get creative and tailor every pie to your personal preferences.</P>
+        </div>
     <div class="div3">
         <header>
             <p id="menu">HOMIES PIZZA</p>
@@ -233,7 +314,7 @@
                     <div class="pic">
                         <img src="cheese-overloaded.jpeg">
                     </div>
-                    <h2 class="food-title">Cheese Overloaded</h2>
+                    <h2 class="food-title">Cheese</h2>
                     <p class="food-price">Rs.400</p>
                     <p class="add">Add</p>
                 </div>
@@ -329,7 +410,7 @@ function addItem() {
 
 // Create cart product
 function createCartProduct(title, price, imgsrc) {
-  return `
+  return 
     <div class="cart-box">
       <img src="${imgsrc}" class="cart-img">
       <div class="detail-box">
@@ -342,7 +423,7 @@ function createCartProduct(title, price, imgsrc) {
       </div>
       <p class="cart-remove">Remove</p>
     </div>
-  `;
+  ;
 }
 
 // Load content
